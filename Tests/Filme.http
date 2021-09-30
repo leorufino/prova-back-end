@@ -1,0 +1,29 @@
+### Cadastrar filme
+POST https://localhost:5001/api/filme/create
+Content-Type: application/json
+
+{
+    "Nome" : "Matrix",
+    "Sinopse" : "Um jovem programador é atormentado por estranhos pesadelos nos quais sempre está conectado por cabos a um imenso sistema de computadores do futuro.",
+    "Nota": 9.3
+}
+
+### Listar filmes
+GET https://localhost:5001/api/filme/list
+
+### Buscar filme pelo id
+GET https://localhost:5001/api/filme/getbyid/1
+
+### Alterar o filme inteiro
+PUT https://localhost:5001/api/filme/update
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "Nome" : "Matrix-Reloaded",
+    "Sinopse" : "Após derrotar as máquinas em seu combate inicial, Neo ainda vive na Nabucodonosor ao lado de Morpheus, Trinity e Link, o novo tripulante da nave.",
+    "Nota" : 8.7
+}
+
+### Deletar filme pelo nome
+DELETE https://localhost:5001/api/filme/delete/Matrix-Reloaded
